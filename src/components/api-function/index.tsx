@@ -3,7 +3,7 @@ import { Api } from '../../constant/index'
 export const getHotels = async (id: number) => {
   try {
     // 👇️ const data: GetUsersResponse
-    const data = await Api.get<any>(`https://backend-bookings.herokuapp.com/hotels/${id}?populate=*`, {
+    const data = await Api.get<any>(`/hotels/${id}?populate=*`, {
       headers: {
         Accept: 'application/json',
       },
