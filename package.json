@@ -1,24 +1,25 @@
 {
-  "name": "react-npm-publish",
+  "name": "bit-react-npm-publish",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/cjs/index.js",
-"module": "./dist/esm/index.js",
-"types": "./dist/esm/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
-"prepublishOnly": "npm test && npm run prettier && npm run lint",
+    "prepublishOnly": "npm test && npm run prettier && npm run lint",
     "test": "jest --config jestconfig.json",
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",    
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
   },
-  "keywords": [ 
-     "react",
-  "typescript",
-  "awesome-project"],
+  "keywords": [
+    "react",
+    "typescript",
+    "awesome-project"
+  ],
   "author": "asadul44",
   "license": "MIT",
   "devDependencies": {
@@ -49,5 +50,8 @@
     "dist",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
