@@ -1,4 +1,4 @@
-# react-npm-publish
+# bit-react-npm-publish
 
 [![NPM version][npm-image]][npm-url]
 [![Build][github-build]][github-build-url]
@@ -11,7 +11,7 @@ You can clone it and step by step create your own NPM package and publish it.
 
 It is simple React counter.
 
-[**Live Demo**](https://gapon2401.github.io/bit-react-npm-publish
+[**Live Demo**](https://asadul44.github.io/react-npm-publish
 /)
 
 ## Installation:
